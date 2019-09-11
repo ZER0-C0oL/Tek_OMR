@@ -1,0 +1,149 @@
+<html>
+
+<head>
+  {% load static %}
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Galada'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat'>
+
+   <link rel="stylesheet" href="{% static "css/style.css" %}"> 
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/fontfaceobserver/2.0.1/fontfaceobserver.min.js'></script>
+  <style>
+    body {
+      /* The image used */
+        background: linear-gradient(rgba(255, 255, 255, .2), rgba(255, 255, 255, .2)), url("{% static "images/bg.jpg" %}");
+      opacity: 1;
+
+      /* Full height */
+      height: 100%;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .wrapper {
+      background-color: #fff;
+    }
+  </style>
+
+</head>
+
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="index.html">
+          <button class="raise">
+            <strong>TEKomr</strong>
+            <i>by LNCT_Group1 </i>
+          </button>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+<div>
+  
+
+  <div class="   container-fluid ">
+
+  <!-- <div class="container "> -->
+    <div class="col-md-4 ">
+      <div id="right">
+
+        
+      </div>
+
+    </div>
+
+    <div class="" style="margin: auto;">
+        <div class=" col-md-6 " style="background-color: #fff; border: 5px solid #111; height: 12%;">
+          <div class=" text-center ">
+            <ul class="list-inline">
+              <li>
+                <h2>RESULT</h2>
+              </li>
+              <li>
+                <h3>:</h3>
+              </li>
+              <li>
+                <h1></h1>{{ answer }}</h1>
+              </li>
+            </ul>
+    
+          </div>
+        </div>
+      </div>
+    
+
+ 
+</div>
+
+
+  </br>
+  </br>
+  </br>
+
+  
+
+
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+  <script>
+    document.querySelector("html").classList.add('js');
+
+    // var fileInput  = document.querySelector( ".input-file" ),  
+    //     button     = document.querySelector( ".input-file-trigger" ),
+    //     the_return = document.querySelector(".file-return");
+
+    button.addEventListener("keydown", function (event) {
+      if (event.keyCode == 13 || event.keyCode == 32) {
+        fileInput.focus();
+      }
+    });
+    button.addEventListener("click", function (event) {
+      fileInput.focus();
+      return false;
+    });
+    fileInput.addEventListener("change", function (event) {
+      the_return.innerHTML = this.value;
+    });
+
+
+function myFunction() {
+    var elements = document.getElementById("frm").elements;
+    var obj ={};
+    for(var i = 0 ; i < elements.length ; i++){
+        var item = elements.item(i);
+        obj[item.name] = item.value;
+    }
+
+    // document.getElementById("demo").innerHTML = JSON.stringify(obj);
+    console.log(JSON.stringify(obj));
+}
+
+
+
+
+  </script>
+  </body>
+
+</html>
