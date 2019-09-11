@@ -65,8 +65,52 @@
   <!-- <div class="container "> -->
     <div class="col-md-4 ">
       <div id="right">
+<form method="post" id="frm" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="jumbotron" style="background-color: #fff;">
+          <div class="cardheader text-center">
+            <h4>TEMPLATE [SVG]</h4>
+          </div>
+          <hr>
+            <div class="input-file-container">
+              <input name="svg" type="file" id="1">
+            </div>
+            <p class="file-return"></p>
+          
+              
+        </div>
+        <div id="right">
+            <div class="jumbotron" style="background-color: #fff;">
+              <div class="cardheader text-center">
+                <h4>Answer Sheet</h4>
+              </div>
+              <hr>
+                <div class="input-file-container">
+                  <input type="file" name="image" id="2">
+    
+                </div>
+                <p class="file-return"></p>
+    
+            </div>
+          </div>
+          <div id="right">
+              <div class="jumbotron" style="background-color: #fff;">
+                <div class="cardheader text-center">
+                  <h4>Json key</h4>
+                </div>
+                <hr>
+                  <div class="input-file-container">
+                    <input type="file" name="json" id="3">
+                  </div>
+                  <p class="file-return"></p>
+              </div>
+            </div>
+            <div class="text-center ">
+                <button type="submit" class="text-center">SUBMIT</button>
+              </div>
+</form>
 
-        
+
       </div>
 
     </div>
